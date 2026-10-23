@@ -1,0 +1,83 @@
+﻿{
+    "updatedAt":  "2026-10-23T14:57:31.000Z",
+    "createdAt":  "2026-10-23T14:57:31.000Z",
+    "id":  "4qdxEjlYzIKFAaxG",
+    "name":  "Mi primer flujo creado por Antigravity",
+    "description":  null,
+    "active":  false,
+    "isArchived":  false,
+    "nodes":  [
+                  {
+                      "parameters":  {
+
+                                     },
+                      "name":  "Iniciar Manualmente",
+                      "type":  "n8n-nodes-base.manualTrigger",
+                      "typeVersion":  1,
+                      "position":  [
+                                       260,
+                                       300
+                                   ],
+                      "id":  "trigger-1"
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "return [{ json: { mensaje: \u0027¡Hola Proyecto PGU! Tu entorno está 100% configurado y funcionando.\u0027, fecha: new Date().toLocaleString() } }];"
+                                     },
+                      "name":  "Mensaje de Bienvenida",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       520,
+                                       300
+                                   ],
+                      "id":  "code-1"
+                  }
+              ],
+    "connections":  {
+                        "Iniciar Manualmente":  {
+                                                    "main":  [
+                                                                 [
+                                                                     {
+                                                                         "node":  "Mensaje de Bienvenida",
+                                                                         "type":  "main",
+                                                                         "index":  0
+                                                                     }
+                                                                 ]
+                                                             ]
+                                                }
+                    },
+    "settings":  {
+
+                 },
+    "staticData":  null,
+    "meta":  null,
+    "pinData":  null,
+    "versionId":  "e475b2b0-a46e-4540-92cd-d6929793f361",
+    "activeVersionId":  null,
+    "versionCounter":  1,
+    "triggerCount":  0,
+    "shared":  [
+                   {
+                       "updatedAt":  "2026-10-23T14:57:31.000Z",
+                       "createdAt":  "2026-10-23T14:57:31.000Z",
+                       "role":  "workflow:owner",
+                       "workflowId":  "4qdxEjlYzIKFAaxG",
+                       "projectId":  "cv5EDJvnV6qgE0sK",
+                       "project":  {
+                                       "updatedAt":  "2026-10-20T14:37:36.970Z",
+                                       "createdAt":  "2026-10-20T14:15:14.981Z",
+                                       "id":  "cv5EDJvnV6qgE0sK",
+                                       "name":  "yosmar santiago garcia amaya \u003cyosmargarciapgutecnologia@gmail.com\u003e",
+                                       "type":  "personal",
+                                       "icon":  null,
+                                       "description":  null,
+                                       "creatorId":  "140fee4d-28aa-4465-af77-344c9cd5a347"
+                                   }
+                   }
+               ],
+    "tags":  [
+
+             ],
+    "activeVersion":  null
+}
