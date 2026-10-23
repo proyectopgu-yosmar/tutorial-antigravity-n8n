@@ -1,0 +1,22 @@
+# GUIÓN DIDÁCTICO PARA EL VIDEO TUTORIAL (GERENCIA GENERAL)
+# Presentador: Proyecto PGU
+
+[00:00 - 00:15] INTRODUCCIÓN
+Estimada Gerencia: Hoy aprenderemos a instalar y configurar nuestro entorno de agentes de Inteligencia Artificial para automatización de procesos. Uniremos Google Antigravity con n8n. En 4 pasos sencillos dejaremos el sistema 100% operativo.
+(Visual: 00_presentador.jpg)
+
+[00:15 - 00:30] PASO 1: ANTIGRAVITY
+Paso 1: Descargamos Antigravity desde antigravity.google e iniciamos sesión con Google. Es nuestro asistente inteligente que creará los flujos por nosotros.
+(Visual: 01_antigravity.jpg)
+
+[00:30 - 00:50] PASO 2: GITHUB TOKEN
+Paso 2: En GitHub vamos a Settings, Developer Settings y creamos un Personal Access Token clásico marcando el permiso repo. Esta es la llave para consultar librerías y componentes.
+(Visual: 02_github_token.png)
+
+[00:50 - 01:15] PASO 3: N8N API KEY
+Paso 3: Abrimos n8n en localhost:5678, vamos a Configuración, n8n API, y creamos la clave Antigravity. Esto autoriza a la IA a crear y modificar flujos sin dibujarlos a mano.
+(Visual: 03_n8n_apikey.png)
+
+[01:15 - 01:40] PASO 4: PRUEBA Y DEMOSTRACIÓN EXITOSA
+Paso 4: Le pedimos a Antigravity crear la automatización y los nodos aparecen conectados. Al pulsar Execute workflow, ambos nodos marcan check verde con éxito total. La instalación está lista para producción.
+(Visual: 04_flujo_creado.png y 05_flujo_ejecutado_verde.png)
